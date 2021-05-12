@@ -9,7 +9,7 @@ import {
   
   const TheRouter = () => {
     return (
-      <Router>
+      <Router basename={process.env.PUBLIC_URL}>
       <Switch>
             <Route exact path="/list">
               <List />
