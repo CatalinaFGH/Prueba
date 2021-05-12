@@ -1,0 +1,25 @@
+.home-container{
+    height: 100vh;
+}
+
+.the-button-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.the-button{
+    font-size: 18px;
+    padding: 2vh 2vw;
+    color: #ffffff;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    background-color: #16B5CB;
+    cursor: pointer;
+    margin-top: 30vh;
+}
+
+.the-button:hover{
+    background-color: #15a0b3;
+}

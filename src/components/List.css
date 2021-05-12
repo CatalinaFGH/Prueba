@@ -1,0 +1,19 @@
+.data-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.list-container{
+    border: solid 2px #125EAA;
+    width: 30vw;
+    padding: 2vw;
+    margin: 1vw;
+}
+
+.list-container p {
+    color: #125EAA;
+    font-weight: bold;
+    font-size: 16px;
+}
