@@ -10,10 +10,10 @@ const List = (props) => {
 const [values, setValues] = useState([]);
 
 useEffect(() => {
-  axios.get("https://jobs.github.com/positions.json?description=api")
+  axios.get("https://rickandmortyapi.com/api/character")
   .then(res => {
        const theData = res.data;
-       setValues(theData);
+       setValues(theData.results);
   });
 },[]);
 
@@ -21,7 +21,7 @@ useEffect(() => {
       <div className="data-container">
         <h2>List page</h2>
         
-          {values.map((item) => <div className="list-container" key={item.id}><p>Title: {item.title} </p><p>Company: {item.company}</p> </div>)}
+          {values.map((item) => <div className="list-container" key={item.id}><p>Title: {item.name} </p><p>Company: {item.gender}</p> </div>)}
       </div>
     );
   }
