@@ -1,11 +1,10 @@
 .home-container{
     height: 100vh;
-}
-
-.the-button-container{
+    background-color: #E3E829;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .the-button{
@@ -15,11 +14,21 @@
     border: none;
     border-radius: 10px;
     outline: none;
-    background-color: #16B5CB;
+    background-color: #125EAA;
     cursor: pointer;
-    margin-top: 30vh;
+    font-weight: bold;
 }
 
 .the-button:hover{
-    background-color: #15a0b3;
+    background-color: #0d3e6e;
+}
+
+@media screen and (min-width: 320px) and (max-width: 414px) and (orientation: portrait) {
+
+    .yellow-logo{
+        height: 20vh;
+    }
+    .the-button{
+        padding: 2vh 5vw;
+    }
 }

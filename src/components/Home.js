@@ -1,4 +1,5 @@
 import './Home.css';
+import logo1AfpCapital from './logo1AfpCapital.svg'
 import {
   Link 
    } from "react-router-dom";
@@ -6,9 +7,8 @@ import {
 const Home = () => {
     return (
       <div className="home-container">
-        <div className="the-button-container">
-           <Link to="/list"><button className="the-button">Button</button></Link>
-        </div>
+          <img src={logo1AfpCapital} alt="logo1" className="yellow-logo"/>
+           <Link to="/list"><button className="the-button">ENTER</button></Link>
       </div>
     );
   }

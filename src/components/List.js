@@ -1,4 +1,5 @@
 import './List.css';
+import logo2AfpCapital from './logo2AfpCapital.svg'
 import React, {useState, useEffect} from 'react';
 import axios from 'axios'; 
 
@@ -19,9 +20,13 @@ useEffect(() => {
 
     return (
       <div className="data-container">
-        <h2>List page</h2>
+        <img src={logo2AfpCapital} alt="logo2" className="white-logo"/>
         
-          {values.map((item) => <div className="list-container" key={item.id}><p>Title: {item.title} </p><p>Company: {item.company}</p> </div>)}
+          {values.map((item) =>
+            <div className="list-container" key={item.id}>
+              <p>Title: <span>{item.title}</span></p>
+              <p>Company: <span>{item.company}</span></p>
+            </div>)}
       </div>
     );
   }
